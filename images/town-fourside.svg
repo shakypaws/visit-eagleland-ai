@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200" role="img" aria-labelledby="t"><title id="t">Fourside: a bright city skyline at dusk</title>
+<rect width="320" height="200" fill="#F2A65A"/><rect width="320" height="90" fill="#9E5C8E" opacity="0.55"/>
+<g fill="#1F2340"><rect x="20" y="90" width="40" height="90"/><rect x="66" y="50" width="44" height="130"/><rect x="116" y="76" width="34" height="104"/><rect x="156" y="30" width="48" height="150"/><rect x="210" y="70" width="38" height="110"/><rect x="254" y="100" width="46" height="80"/></g>
+<rect x="176" y="14" width="8" height="18" fill="#1F2340"/>
+<g fill="#F2B84B"><rect x="28" y="102" width="8" height="8"/><rect x="44" y="124" width="8" height="8"/><rect x="76" y="66" width="8" height="8"/><rect x="92" y="90" width="8" height="8"/><rect x="76" y="118" width="8" height="8"/><rect x="124" y="92" width="8" height="8"/><rect x="164" y="48" width="8" height="8"/><rect x="184" y="72" width="8" height="8"/><rect x="164" y="100" width="8" height="8"/><rect x="218" y="86" width="8" height="8"/><rect x="262" y="116" width="8" height="8"/><rect x="282" y="134" width="8" height="8"/></g>
+<rect y="180" width="320" height="20" fill="#0F1228"/>
+</svg>

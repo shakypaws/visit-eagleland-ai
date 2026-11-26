@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200" role="img" aria-labelledby="t"><title id="t">Threed: crooked houses under a moody night sky</title>
+<rect width="320" height="200" fill="#1F2340"/><circle cx="252" cy="44" r="22" fill="#FFF8EC"/><circle cx="262" cy="38" r="20" fill="#1F2340"/>
+<g fill="#FFF8EC"><circle cx="40" cy="30" r="2"/><circle cx="110" cy="52" r="2"/><circle cx="170" cy="24" r="2"/><circle cx="215" cy="70" r="2"/><circle cx="80" cy="84" r="2"/></g>
+<rect y="150" width="320" height="50" fill="#1A6B61"/>
+<g><rect x="50" y="96" width="50" height="58" fill="#3A4170"/><polygon points="44,96 75,56 106,96" fill="#B8323A"/><rect x="66" y="122" width="16" height="32" fill="#F2B84B"/>
+<rect x="130" y="108" width="40" height="46" fill="#3A4170"/><polygon points="124,108 150,76 176,108" fill="#1F2340" stroke="#FFF8EC" stroke-width="2"/><rect x="142" y="124" width="10" height="14" fill="#F2B84B"/>
+<rect x="196" y="100" width="46" height="54" fill="#3A4170"/><polygon points="190,100 219,64 248,100" fill="#B8323A"/><rect x="208" y="118" width="10" height="14" fill="#F2B84B"/><rect x="224" y="118" width="10" height="14" fill="#F2B84B"/></g>
+<rect y="172" width="320" height="28" fill="#0F1228"/>
+</svg>

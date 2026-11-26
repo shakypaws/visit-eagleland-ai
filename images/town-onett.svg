@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200" role="img" aria-labelledby="t"><title id="t">Onett: houses on a hill above the sea</title>
+<rect width="320" height="200" fill="#9ED8E8"/><circle cx="262" cy="42" r="20" fill="#F2B84B"/>
+<rect y="150" width="320" height="50" fill="#1A6B61"/>
+<path d="M0 150 Q80 60 170 110 T320 100 V200 H0Z" fill="#6FB58A"/>
+<g><rect x="90" y="90" width="40" height="34" fill="#FFF8EC"/><polygon points="84,90 110,66 136,90" fill="#B8323A"/><rect x="104" y="104" width="12" height="20" fill="#1F2340"/>
+<rect x="150" y="100" width="34" height="28" fill="#F2B84B"/><polygon points="144,100 167,80 190,100" fill="#1F2340"/>
+<rect x="200" y="96" width="30" height="26" fill="#FFF8EC"/><polygon points="195,96 215,78 235,96" fill="#1A6B61"/></g>
+<rect y="168" width="320" height="32" fill="#1F2340"/><rect x="20" y="182" width="40" height="4" fill="#FFF8EC"/><rect x="120" y="182" width="40" height="4" fill="#FFF8EC"/><rect x="220" y="182" width="40" height="4" fill="#FFF8EC"/>
+</svg>
