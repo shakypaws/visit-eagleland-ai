@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64"><rect width="64" height="64" rx="12" fill="#1F2340"/><path d="M8 46 Q24 22 40 34 T58 28 V56 H8Z" fill="#1A6B61"/><circle cx="46" cy="18" r="7" fill="#F2B84B"/><rect x="18" y="30" width="14" height="14" fill="#FFF8EC"/><polygon points="15,30 25,20 35,30" fill="#B8323A"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="64" height="64" shape-rendering="crispEdges" role="img" aria-labelledby="t"><title id="t">Eagleland pixel icon</title>
+<rect width="16" height="16" fill="#1F2340"/>
+<g fill="#F2B84B"><rect x="11" y="2" width="3" height="1"/><rect x="10" y="3" width="5" height="1"/><rect x="10" y="4" width="5" height="1"/><rect x="10" y="5" width="5" height="1"/><rect x="11" y="6" width="3" height="1"/></g>
+<g fill="#B8323A"><rect x="6" y="4" width="2" height="1"/><rect x="5" y="5" width="4" height="1"/><rect x="4" y="6" width="6" height="1"/><rect x="3" y="7" width="8" height="1"/></g>
+<g fill="#FFF8EC"><rect x="4" y="8" width="6" height="1"/><rect x="4" y="9" width="2" height="1"/><rect x="8" y="9" width="2" height="1"/><rect x="4" y="10" width="2" height="1"/><rect x="8" y="10" width="2" height="1"/><rect x="4" y="11" width="2" height="1"/><rect x="8" y="11" width="2" height="1"/></g>
+<g fill="#1A6B61"><rect x="0" y="11" width="4" height="1"/><rect x="10" y="11" width="6" height="1"/><rect x="0" y="12" width="16" height="1"/><rect x="0" y="13" width="16" height="1"/><rect x="0" y="14" width="16" height="1"/><rect x="0" y="15" width="16" height="1"/></g>
+</svg>

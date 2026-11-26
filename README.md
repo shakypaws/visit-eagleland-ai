@@ -24,7 +24,7 @@ Every commit made by the Builder carries the trailer `Assisted-by: Claude Sonnet
 
 ## Assets and optimization notes
 
-- **Illustrations:** original SVG artwork (made with Claude), used through `<img>` tags.
+- **Illustrations:** original 16-bit-style pixel-art SVGs (square `rect` pixels with `shape-rendering="crispEdges"`), made with Claude Sonnet 5.5 and used through `<img>` tags. No Nintendo characters, sprites or logos are used or imitated.
 - **Photos:** two Wikimedia Commons photos (CC0 and CC BY 4.0), converted to `.webp` with `cwebp` (quality 80, 1280px wide).
 - **Video:** one CC BY 2.0 clip from Wikimedia Commons. No video encoder (ffmpeg) was available on this Mac, so I used the 480p WebM version that Wikimedia Commons already provides (about 1 MB, 11 seconds). There is no MP4 version. The clip has no speech, so a text description sits under it instead of a caption track.
 - **Font:** Press Start 2P (SIL Open Font License), self-hosted in `fonts/` with its licence text.
