@@ -119,19 +119,19 @@ visit-eagleland-ai/
 
 ## 11. Requirements checklist
 
-- [ ] 4 pages: 3 about Eagleland + 1 credits
-- [ ] Credits list the page each asset is used on, with creator links and AI tools
-- [ ] 1 table, 2+ images, 1 video/audio, 1 blockquote, 1 accessible contact form
-- [ ] Same nav on all pages, linking to every page
-- [ ] SEO meta description on each page
-- [ ] Favicon for mobile, tablet and desktop on all pages
-- [ ] 1 external stylesheet shared by all pages
-- [ ] CSS Grid, CSS Flexbox, 1 custom font
-- [ ] Semantic, clean HTML and CSS
-- [ ] Mobile-first, works 320px–1920px
-- [ ] Skip link and keyboard navigation
-- [ ] Optimized images and video
-- [ ] All content is Creative Commons or original
+- [x] 4 pages: 3 about Eagleland + 1 credits
+- [x] Credits list the page each asset is used on, with creator links and AI tools
+- [x] 1 table, 2+ images, 1 video/audio, 1 blockquote, 1 accessible contact form
+- [x] Same nav on all pages, linking to every page
+- [x] SEO meta description on each page
+- [x] Favicon for mobile, tablet and desktop on all pages
+- [x] 1 external stylesheet shared by all pages
+- [x] CSS Grid, CSS Flexbox, 1 custom font
+- [x] Semantic, clean HTML and CSS
+- [x] Mobile-first, works 320px–1920px
+- [x] Skip link and keyboard navigation
+- [x] Optimized images and video
+- [x] All content is Creative Commons or original
 - [ ] Public GitHub repo
 
 ---
