@@ -31,6 +31,78 @@
 
   <main id="main">
     <h1>Plan Your Visit</h1>
+
+    <div class="visit-intro">
+      <section class="getting-around">
+        <h2>Getting Around</h2>
+        <p>Eagleland is easy to explore, because the towns are linked by a friendly bus route and a few long, scenic highways. Keep these tips in mind before you set off.</p>
+        <ul>
+          <li>Buses run between the towns all day, so keep a little spare change handy.</li>
+          <li>Carry snacks on the desert stretches, because services are far apart.</li>
+          <li>Check the weather before heading out, since evening storms roll in fast.</li>
+          <li>Ask a local for directions, because they love giving advice.</li>
+        </ul>
+      </section>
+
+      <section class="local-wisdom">
+        <h2>Local Wisdom</h2>
+        <blockquote>
+          <p>Take the long road if you can. The scenery is free, and the pie at the end is worth the wait.</p>
+          <footer>&mdash; <cite>Maple, a lifelong Onett resident</cite></footer>
+        </blockquote>
+      </section>
+    </div>
+
+    <section class="video-section">
+      <h2>See It for Yourself</h2>
+      <video controls preload="metadata" width="854" height="480">
+        <source src="video/small-town-sunset.webm" type="video/webm">
+        <p>Your browser cannot play this video. It shows evening clouds drifting over the edge of a small town.</p>
+      </video>
+      <p class="video-description">Video description: a short timelapse of evening rain clouds moving across the sky at sunset over the edge of a small town. The clip has no speech. It is a real-world stand-in for the quiet skies above Eagleland.</p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Send us a message</legend>
+
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="field">
+            <label for="town">Which town are you visiting?</label>
+            <select id="town" name="town">
+              <option value="">Choose a town</option>
+              <option value="onett">Onett</option>
+              <option value="twoson">Twoson</option>
+              <option value="threed">Threed</option>
+              <option value="fourside">Fourside</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <div class="field field-checkbox">
+            <input type="checkbox" id="tips" name="tips">
+            <label for="tips">Send me travel tips by email</label>
+          </div>
+
+          <button type="submit">Send message</button>
+        </fieldset>
+      </form>
+    </section>
   </main>
 
   <footer class="site-footer">
