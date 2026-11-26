@@ -1,1 +1,422 @@
-/* Visit Eagleland styles - filled in at step 7 */
+/* ==========================================================================
+   Visit Eagleland - shared stylesheet (mobile-first)
+   Breakpoints: 600px, 900px, 1200px (min-width)
+   ========================================================================== */
+
+/* 1. Fonts ---------------------------------------------------------------- */
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("../fonts/press-start-2p.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Custom properties ---------------------------------------------------- */
+:root {
+  /* Colours (red and teal both pass WCAG AA on cream) */
+  --cream: #FFF8EC;
+  --navy: #1F2340;
+  --red: #B8323A;
+  --teal: #1A6B61;
+  --white: #FFFFFF;
+  --line: #D9CFBD;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-s: 1rem;
+  --space-m: 1.5rem;
+  --space-l: 2.5rem;
+  --space-xl: 4rem;
+
+  /* Fonts */
+  --font-heading: "Press Start 2P", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --radius: 8px;
+}
+
+/* 3. Base ----------------------------------------------------------------- */
+body {
+  background: var(--cream);
+  color: var(--navy);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+h1 { font-size: 1.1rem; margin-bottom: var(--space-s); }
+h2 { font-size: 0.9rem; margin-bottom: var(--space-s); }
+h3 { font-size: 0.75rem; margin-bottom: var(--space-xs); }
+
+p, ul, figure { margin-bottom: var(--space-s); }
+
+a { color: var(--teal); }
+a:hover { color: var(--red); }
+
+/* Visible keyboard focus on all interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+video:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 3px;
+}
+
+/* 4. Skip link ------------------------------------------------------------ */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: var(--space-xs) var(--space-s);
+  background: var(--navy);
+  color: var(--cream);
+}
+
+.skip-link:focus {
+  left: var(--space-xs);
+  top: var(--space-xs);
+}
+
+/* 5. Header and navigation (Flexbox) -------------------------------------- */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xs) var(--space-s);
+  padding: var(--space-s);
+  background: var(--navy);
+  color: var(--cream);
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  line-height: 1.5;
+  color: var(--cream);
+  text-decoration: none;
+}
+
+.nav-toggle {
+  padding: var(--space-xs) var(--space-s);
+  border: 2px solid var(--cream);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--cream);
+  cursor: pointer;
+}
+
+.site-header a:focus-visible,
+.site-header button:focus-visible {
+  outline-color: var(--cream);
+}
+
+.site-nav {
+  flex-basis: 100%;
+}
+
+/* Only hide the nav when JavaScript is running */
+.js .site-nav { display: none; }
+.js .site-nav.is-open { display: block; }
+
+.site-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav a {
+  display: block;
+  padding: var(--space-xs) 0;
+  color: var(--cream);
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+.site-nav a:hover { border-bottom-color: var(--cream); }
+
+.site-nav a[aria-current="page"] {
+  font-weight: 700;
+  border-bottom-color: #F2B84B;
+}
+
+/* 6. Page layout ---------------------------------------------------------- */
+main {
+  padding: var(--space-m) var(--space-s) var(--space-l);
+}
+
+main > section { margin-bottom: var(--space-l); }
+
+/* 7. Home page ------------------------------------------------------------ */
+.hero {
+  display: grid;
+  gap: var(--space-m);
+  align-items: center;
+}
+
+.hero-figure img { border-radius: var(--radius); }
+
+/* Town cards: CSS Grid, 1 column -> 2 columns -> 4 columns */
+.town-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-m);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.town-card {
+  height: 100%;
+  padding: var(--space-s);
+  background: var(--white);
+  border: 2px solid var(--navy);
+  border-radius: var(--radius);
+  box-shadow: 4px 4px 0 var(--red);
+}
+
+.town-card img {
+  margin-bottom: var(--space-s);
+  border-radius: 4px;
+}
+
+.why-visit {
+  display: grid;
+  gap: var(--space-m);
+  align-items: center;
+}
+
+figcaption {
+  margin-top: var(--space-xs);
+  font-size: 0.875rem;
+}
+
+.why-visit img,
+.town img {
+  border-radius: var(--radius);
+}
+
+/* 8. Towns page ----------------------------------------------------------- */
+.table-wrap {
+  overflow-x: auto; /* the table scrolls sideways on small screens */
+}
+
+table {
+  width: 100%;
+  min-width: 36rem;
+  border-collapse: collapse;
+  background: var(--white);
+}
+
+caption {
+  padding: var(--space-xs) 0;
+  text-align: left;
+  font-weight: 700;
+}
+
+th, td {
+  padding: var(--space-xs) var(--space-s);
+  border: 1px solid var(--navy);
+  text-align: left;
+  vertical-align: top;
+}
+
+thead th {
+  background: var(--navy);
+  color: var(--cream);
+}
+
+tbody th { background: #F3E9D6; }
+
+.town {
+  display: grid;
+  gap: var(--space-s);
+  align-items: center;
+  scroll-margin-top: var(--space-s);
+}
+
+/* 9. Visit page ----------------------------------------------------------- */
+blockquote {
+  margin: 0 0 var(--space-s);
+  padding: var(--space-s) var(--space-m);
+  background: var(--white);
+  border-left: 6px solid var(--red);
+  font-size: 1.125rem;
+}
+
+blockquote footer {
+  font-size: 0.9375rem;
+}
+
+.video-section video {
+  width: 100%;
+  max-width: 854px;
+  aspect-ratio: 16 / 9;
+  background: var(--navy);
+}
+
+.video-description {
+  margin-top: var(--space-xs);
+  max-width: 60ch;
+}
+
+/* Contact form */
+form { max-width: 600px; }
+
+fieldset {
+  margin: 0;
+  padding: var(--space-m) var(--space-s);
+  border: 2px solid var(--navy);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+legend {
+  padding: 0 var(--space-xs);
+  font-weight: 700;
+}
+
+.field { margin-bottom: var(--space-s); }
+
+.field label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 2px solid var(--navy);
+  border-radius: 4px;
+  background: var(--white);
+  color: var(--navy);
+}
+
+.field-checkbox {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.field-checkbox input {
+  width: 1.25rem;
+  height: 1.25rem;
+  accent-color: var(--teal);
+}
+
+.field-checkbox label {
+  margin: 0;
+  font-weight: 400;
+}
+
+button[type="submit"] {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--red);
+  border-radius: var(--radius);
+  background: var(--red);
+  color: var(--cream);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+/* 10. Credits page -------------------------------------------------------- */
+.credit-list {
+  padding-left: var(--space-m);
+}
+
+.credit-list li {
+  margin-bottom: var(--space-s);
+  max-width: 75ch;
+}
+
+/* 11. Footer -------------------------------------------------------------- */
+.site-footer {
+  padding: var(--space-m) var(--space-s);
+  background: var(--navy);
+  color: var(--cream);
+  font-size: 0.9375rem;
+}
+
+.site-footer p:last-child { margin-bottom: 0; }
+
+.site-footer a { color: var(--cream); }
+.site-footer a:focus-visible { outline-color: var(--cream); }
+
+/* 12. Medium screens: 600px and up ---------------------------------------- */
+@media (min-width: 600px) {
+  main { padding: var(--space-l) var(--space-m); }
+  h1 { font-size: 1.4rem; }
+  h2 { font-size: 1rem; }
+  h3 { font-size: 0.8rem; }
+  .town-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* 13. Desktop: 900px and up ----------------------------------------------- */
+@media (min-width: 900px) {
+  /* Nav is always shown; toggle is hidden */
+  .site-header { flex-wrap: nowrap; padding: var(--space-s) var(--space-m); }
+  .nav-toggle { display: none; }
+  .site-nav { flex-basis: auto; }
+  .js .site-nav { display: block; }
+  .site-nav ul { flex-direction: row; gap: var(--space-m); }
+  .logo { font-size: 0.85rem; }
+
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.15rem; }
+
+  .hero { grid-template-columns: 1fr 1fr; }
+  .why-visit { grid-template-columns: 1fr 1fr; }
+  .town-grid { grid-template-columns: repeat(4, 1fr); }
+
+  /* Towns: text and image side by side, alternating sides */
+  .town { grid-template-columns: 1fr 1fr; gap: var(--space-m); }
+  .town-flip figure { order: -1; }
+
+  /* Visit: tips and quote side by side */
+  .visit-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-l);
+    margin-bottom: var(--space-l);
+  }
+}
+
+/* 14. Large screens: 1200px and up ---------------------------------------- */
+@media (min-width: 1200px) {
+  .site-header,
+  main,
+  .site-footer {
+    padding-left: max(var(--space-m), calc((100% - 1100px) / 2));
+    padding-right: max(var(--space-m), calc((100% - 1100px) / 2));
+  }
+}
