@@ -60,4 +60,19 @@ Rules:
 
 ## 4. Checks and fixes
 
-_Add follow-up prompts here as you make changes._
+**My check:** I looked at the site in the browser. It worked, but I didn't love the design. I decided to keep it for this activity and redesign later, because it already met the requirements.
+
+**Second AI check (Claude Haiku 5.5, new chat):**
+```
+Check the website in visit-eagleland-ai against Gen-AI-Planning-Activity-Requirements.pdf.
+For each requirement in the PDF, say Pass or Fail, with the file and a one-line reason.
+Then list any fixes needed, most important first.
+Do not edit any files. Keep it short.
+```
+
+**What it found:** everything passed except: (1) not on GitHub yet, (2) a `GITHUB_USER` placeholder in the credits link, (3) EarthBound names and lore aren't Creative Commons, (4) the AI tools on the credits page weren't linked, (5) 320px and 1920px weren't checked in a browser.
+
+**What I did:**
+- Fixed (1), (2) and (4) and pushed to GitHub.
+- (3): kept. Eagleland is the same topic as my original Country Website project, and the credits page clearly says the names and lore belong to Nintendo and are used for a non-commercial student project.
+- (5): checked the pages at 320px and 1920px in a browser. No overflow, and the table scrolls sideways on small screens.

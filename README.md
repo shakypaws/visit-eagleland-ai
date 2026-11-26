@@ -32,7 +32,5 @@ Every commit made by the Builder carries the trailer `Assisted-by: Claude Sonnet
 
 ## To add or do
 
-- Replace `GITHUB_USER` in the AI log link at the bottom of `credits.html` with the real GitHub username.
-- Create the public GitHub repo `visit-eagleland-ai` and upload to `kimdesignedthis.com/visit-eagleland-ai/` (not done on purpose).
 - Run the official W3C HTML and CSS validators. Java is not installed on this Mac, so the local W3C validator could not run. The pages were checked with `html-validate` instead (no errors).
 - Optional: add an MP4 copy of the video for older browsers.
